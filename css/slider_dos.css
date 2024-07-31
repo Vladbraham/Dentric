@@ -1,0 +1,147 @@
+.slide_contenedor_dos {
+  max-width: 100%;
+  max-height: 100vh;
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  /*margin: auto;*/
+  margin: 150px auto 0px auto;
+  background-image: url(../imagenes/fondoatras.png);
+  background-size: cover;
+  z-index: 1;
+  background-color: #0c4179;
+  padding: 15px 0px;
+}
+.miSlider_dos img {
+  width: 100%;
+  max-height: 100vh;
+  height: inherit;
+  -o-object-fit: contain;
+  object-fit: contain;
+  vertical-align: top;
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+  z-index: 1;
+  padding: 10px 0px;
+}
+
+@keyframes aparecer {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.direcciones_dos {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 20px;
+  display: none;
+}
+.direcciones_dos a {
+  color: #fff;
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
+}
+.direcciones_dos a:hover {
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.barras_dos {
+  position: absolute;
+  bottom: calc(50% - 55px);
+  left: calc(5% - 20px);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+.barra_dos {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 0 2px;
+  background-color: #fff;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+.active {
+  color: #1161a0;
+
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.fade {
+  -webkit-animation: fade;
+  animation: fade;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 767px) {
+  .slide_contenedor_dos {
+    max-width: 100%;
+    max-height: 100vh;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    /*margin: auto;*/
+    margin: 100px auto 0px auto;
+    background-image: url(../imagenes/fondoatras.png);
+    background-size: cover;
+    z-index: 1;
+    background-color: #0c4179;
+    padding: 15px 0px;
+  }
+  .barras_dos {
+    position: absolute;
+    bottom: 2%;
+    left: 10px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+  }
+}
